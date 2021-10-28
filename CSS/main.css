@@ -1,0 +1,226 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .intro{
+    height: 100vh;
+    padding: 120px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .intro h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  .intro h2{
+    font-weight: 300;
+    max-width: 700px;
+  }
+  .intro h2 span{
+    font-weight: 700;
+  }
+  .intro h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .intro h3 span:last-of-type a{
+    font-weight: 400;
+    padding: 2px 3px;
+    text-decoration: none;
+    box-shadow: inset 0 -3px 0 #007bff;
+    color: black;
+  }
+  section{
+    display: flex;
+    justify-content: center;
+    padding: 100px 170px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .section-title{
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 70px;
+    color: #007bff;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .section-content{
+    font-weight: 300;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 650px;
+  }
+  .jobs{
+    margin-bottom: 100px;
+  }
+  .job{
+    margin-bottom: 25px;
+  }
+  .job-company{
+    font-weight: 700;
+  }
+  .job-time{
+    font-size: 0.9rem;
+  }
+  .time-place{
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .section-content p{
+    margin-top: 0;
+      margin-bottom: 25px;
+  }
+  .skills{
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills-label{
+    font-weight: 700;
+    color: #36363c
+  }
+  .skills ul{
+  list-style: none;
+  }
+  .skills ul li{
+    margin: 3px 0;
+    font-size: 0.9rem;
+  }
+  .resume-link{
+    margin-top: 50px;
+  }
+  .resume-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .projects{
+    max-width: 600px;
+    margin-bottom: 50px;
+  }
+  .project-name{
+    margin-bottom: 10px;
+  }
+  .project-name a{
+    font-weight: 700;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+  }
+  .project-item{
+    display: inline-block;
+      margin: 3px 3px 3px 0;
+   
+      font-size: .75rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 3px;
+      color: #007bff;
+      border: 1px solid #007bff;
+      background: 0 0;
+  }
+  .footer{
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .footer-copyright{
+    font-weight: 700;
+      width: 200px;
+  }
+  .footer-contact a{
+   text-decoration: none;
+   color: #007bff;
+   padding: 0 5px;
+  }
+  .footer-contact a span:last-of-type{
+    display: none;
+    
+  }
+  @media (min-width: 768px) and (max-width: 1024px){
+    section{
+      padding: 50px;
+      flex-direction: column;
+    }
+    .section-title{
+      text-align: left;
+      width: auto;
+      margin-right: 50px;
+    }
+    .section-content{
+      padding-top: 30px;
+      padding-left: 50px;
+      font-weight: 300;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 650px;
+    }
+    .footer{
+      padding: 50px;
+    }
+    .footer-copyright{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .footer-contact a span:first-of-type{
+      display: none;
+    }
+    .footer-contact a span:last-of-type{
+      display: inline-block;
+    }
+  }
+  @media (max-width: 700px){
+    .intro{
+      padding: 70px 50px;
+    }
+    section{
+      padding: 50px 35px;
+      flex-direction: column;
+    }
+    .section-title{
+      margin-right: 50px;
+      text-align: left;
+      width: auto;
+    }
+    .section-content{
+      padding-left: 30px;
+      padding-top: 30px;
+    }
+    .skills{
+      flex-wrap: wrap;
+    }
+    .skills-section{
+      width: 47%;
+      margin-right: 5px;
+      margin-bottom: 25px
+    }
+    .time-place{
+      flex-direction: column;
+    }
+    .footer{
+      flex-direction: column;
+      padding: 50px 30px;
+    }
+    .footer-copyright{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-bottom: 30px;
+    }
+    .footer-contact a span:first-of-type{
+      display: none;
+    }
+    .footer-contact a span:last-of-type{
+      display: inline-block;
+    }
+  }
